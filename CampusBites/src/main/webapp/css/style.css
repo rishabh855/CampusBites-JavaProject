@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #222;
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: #ff9800;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    background: white;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #e65100;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* ================= HEADINGS ================= */
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* ================= BUTTONS ================= */
+
+button,
+.btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+.btn:hover {
+    background: #e68900;
+}
+
+.btn-danger {
+    background: #e53935;
+}
+
+.btn-danger:hover {
+    background: #c62828;
+}
+
+.btn-secondary {
+    background: #555;
+}
+
+.btn-secondary:hover {
+    background: #333;
+}
+
+/* ================= SEARCH ================= */
+
+.search-box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.search-box form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* ================= FOOD GRID ================= */
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+    gap: 22px;
+}
+
+.food-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.food-card h2 {
+    color: #e65100;
+}
+
+.food-category {
+    color: #777;
+    font-size: 14px;
+}
+
+.food-description {
+    margin: 12px 0;
+    color: #666;
+}
+
+.price {
+    font-size: 21px;
+    font-weight: bold;
+    color: #222;
+    margin: 12px 0;
+}
+
+.status-available {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.status-unavailable {
+    color: #c62828;
+    font-weight: bold;
+}
+
+.card-actions {
+    margin-top: 18px;
+}
+
+.card-actions a {
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+/* ================= FORMS ================= */
+
+.form-container {
+    background: white;
+    max-width: 550px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* ================= CART ================= */
+
+.cart-item {
+    background: white;
+    padding: 22px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.cart-item h2 {
+    color: #e65100;
+}
+
+.quantity {
+    margin: 12px 0;
+}
+
+.quantity a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.cart-total {
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    text-align: right;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.cart-total h2 {
+    margin-bottom: 18px;
+}
+
+/* ================= TABLE ================= */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #222;
+    color: white;
+}
+
+th,
+td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #fafafa;
+}
+
+/* ================= CONFIRMATION ================= */
+
+.confirmation {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 45px;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.confirmation h1 {
+    color: #2e7d32;
+}
+
+.order-id {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e65100;
+    margin: 20px 0;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.empty-state {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    margin-top: 50px;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .search-box form {
+        flex-direction: column;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
